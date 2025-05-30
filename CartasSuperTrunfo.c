@@ -1,22 +1,56 @@
 #include <stdio.h>
+typedef struct{
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
+    int populacao;
+    float area;
+    float pib;
+    int pontos_turisticos;
+} jogador;
 
-int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+int main(){
+jogador jogador1, jogador2;
 
-    return 0;
+    printf("Jogador Numero 1!!\n");
+    printf("Digite sua populacao: ");
+    scanf("%d", &jogador1.populacao);
+printf("Sua populacao é %d\n", jogador1.populacao);
+
+printf("Digite sua area: ");
+scanf("%f", &jogador1.area);
+printf ("Sua area é %f\n", jogador1.area);
+
+printf("Digite seu PIB: ");
+scanf("%f", &jogador1.pib);
+printf("Seu PIB é %f\n", jogador1.pib);
+
+printf("Numero de pontos turisticos: ");
+scanf("%d", &jogador1.pontos_turisticos);
+printf("Numero de pontos turisticos são: %d\n", jogador1.pontos_turisticos);
+
+//variavel 2
+
+printf("Jogador numero2!!\n");
+prinf("Digite sua populacao: ");
+scanf("%d", &jogador2.populacao);
+printf("Sua populacao é %d\n", jogador2.populacao);
+
+printf("Digite sua area: ");
+scanf("%f", &jogador2.area);
+printf("Sua area é %f/n", jogador2.area);
+
+printf("Digite seu PIB: ");
+scanf("%f", &jogador2.pib);
+printf("Seu PIB é %f\n", jogador2.pib);
+ 
+printf("Nunemro de pontos turisticos: ");
+scanf("%d", jogador2.pontos_turisticos);
+printf("Numero de pontos turisticos são %d/n", jogador2.pontos_turisticos);
+
+
+
+
+
+
+
+
 }
